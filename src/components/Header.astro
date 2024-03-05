@@ -2,8 +2,17 @@
 import MoonIcon from '../icons/Moon.astro'
 ---
 
-<nav class="w-full bg-cyan-400 h-24 flex items-center dark:bg-neutral-700 px-10 justify-between">
-  <h1 class="text-5xl font-bold uppercase">Atlas</h1>
+<nav class="w-full bg-fuchsia-900 h-24 flex items-center dark:bg-neutral-700 px-10 justify-between">
+  <a href="/"><h1 class="text-5xl font-bold uppercase">Atlantis</h1></a>
+  <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">  
+    <div class="hidden sm:ml-6 sm:block">
+      <div class="flex space-x-4">
+        <a href="/ejercicios" class="text-gray-300 hover:bg-green-950 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Ejercicios</a>
+        <a href="/rutinas" class="text-gray-300 hover:bg-green-950 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Rutinas</a>
+        <a href="/recetas" class="text-gray-300 hover:bg-green-950 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Recetas</a>
+      </div>
+    </div>
+  </div>
   <button id="toggle">
     <MoonIcon class="size-9"/>
   </button>
@@ -19,3 +28,4 @@ import MoonIcon from '../icons/Moon.astro'
     });
   }
 </script>
+
